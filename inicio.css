@@ -1,0 +1,579 @@
+@font-face {
+  font-family: "coolvetica";
+  src: url(font/coolvetica/Coolvetica\ Rg.otf);
+}
+
+@font-face {
+  font-family: "baby";
+  src: url(font/babydoll/Baby\ Doll.otf);
+}
+
+@font-face {
+  font-family: "fatkat";
+  src: url(font/fat_kat/Fat\ Kat.ttf);
+}
+
+@font-face {
+  font-family: "mamboe";
+  src: url(font/mamboe/Mamboe\ Trial.otf);
+}
+
+@font-face {
+  font-family: "super";
+  src: url(font/super_comic_3/Super\ Comic.ttf);
+}
+
+@font-face {
+  font-family: "marline";
+  src: url(font/marline/Marline\ Personal\ Use\ Only.otf);
+}
+
+@font-face {
+  font-family: "creato";
+  src: url(font/creato_display/CreatoDisplay-Light.otf);
+}
+
+@font-face {
+  font-family: "alte haas grotesk bold";
+  src: url(/font/AlteHaasGroteskBold.ttf);
+}
+@font-face {
+  font-family: "cocogooseFINA";
+  src: url(/font/cocogoose/Cocogoose-Pro-Semilight-trial.ttf);
+}
+
+@font-face {
+  font-family: "cocogooseGROSSA";
+  src: url(/font/cocogoose/Cocogoose-Pro-Darkmode-trial.ttf);
+}
+
+@font-face {
+  font-family: "bear";
+  src: url(font/bear_days/Bear\ Days.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "cocogooseGROSSA";
+}
+
+
+body {
+  margin: 0;
+  font-family: "cocogooseGROSSA", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+header {
+  width: 100%;
+}
+
+.capa {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  box-shadow: 0 4px 6px rgba(207, 98, 98, 0.062);
+  background: #ffeed1;
+  position: relative;
+  overflow: hidden;
+  margin: 0 ;
+}
+
+.capa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  transform: skewX(-20deg);
+  animation: lightSweep 8s infinite linear;
+}
+@keyframes lightSweep {
+  0% { left: -80%; }
+  50% { left: 120%; }
+  100% { left: 120%; }
+}
+
+.logo {
+  width: 170px;
+  height: 50px;
+  transition: transform 0.6s ease, filter 0.5s ease;
+  margin-top: 20px;
+  margin-bottom: 20px ;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.nave {
+  position: relative;
+  text-decoration: none;
+  font-size: 28px;
+  color: #7b5543;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+.nave:hover {
+  color: #9d2f31;
+  transform: translateY(-2px);
+}
+.nave::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #9d2f31;
+  transition: width 0.4s ease;
+  transform: translateX(-50%);
+}
+.nave:hover::after {
+  width: 100%;
+}
+.nave.ativo {
+  color: #9d2f31;
+  font-size: 30px;
+}
+
+.eventosMain {
+  text-align: center;
+  padding: 60px 8%;
+  background-color: #fbf4eb;
+  animation: fadeUp 1s ease;
+}
+
+.tituloEventos {
+  font-size: 40px;
+  color: #9d2f31;
+  margin-bottom: 40px;
+  font-family:"cocogooseGROSSA";
+}
+
+
+.main {
+  background-color: #fbf4eb;
+}
+
+.cardapio {
+  background-color: #7b5543;
+  padding-top: 80px;
+}
+
+.produt {
+
+  font-family: "mamboe";
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 80px;
+  color: rgb(255, 226, 201);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: 1000px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  font: 200;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.produt h1 {
+margin-top: 100px;
+}
+
+.section {
+  padding-top: 110px;
+}
+
+.produto {
+  margin-left: 50px;
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.prodimg {
+
+  margin-top: 20px;
+  width: 300px;
+  margin-bottom: 30px;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  cursor: pointer;
+
+}
+
+a {
+  color: rgb(177, 110, 51);
+}
+.bbutton {
+  font-family: "cocogooseFINA";
+  width: 150px;
+  border-radius: 30px;
+  border: #9d2f31;
+  border-width: 50px;
+  background-color: rgb(255, 226, 201);
+  color: #644848;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -55px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  width: 200px;
+}
+
+.bbutton:hover {
+  transform: scale(1.08);
+  background-color: rgb(255, 226, 201);
+  box-shadow: 0 4px 12px rgba(157, 47, 49, 0.3);
+}
+
+
+
+
+.pword {
+  margin-left: 20px;
+  font-weight: 20px;
+  font-size: 30px;
+  color: rgb(255, 226, 201);
+  margin-bottom: -25px;
+  font-family: "cocogooseFINA";
+}
+
+.comidas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
+  margin: 100px;
+  margin-bottom: 70px;
+}
+
+.sp {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+}
+
+.textinho {
+  text-align: center;
+  margin: 15px;
+}
+
+.promocoes {
+display: flex;
+background-color: #fff4dd;
+text-align: center;
+align-items: center;
+justify-content: center;
+padding: 100px;
+padding-bottom: 200px;
+}
+
+.promoc {
+  text-align: center;
+
+}
+
+.cardapio {
+  background-color: #7b5543;
+}
+
+.pBrownie,
+.pCaridosa {
+  width: 792px;
+  height: 525px;
+  transition: 0.3s ease-in;
+  margin-top: -30px;
+}
+
+.pBrownie:hover,
+.pCaridosa:hover {
+  scale: 1.02;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 40px 30px 20px;
+}
+
+.nSolidario {
+
+  transition: 0.3s ease-in;
+}
+
+.nSolidario:hover {
+  scale: 1.02;
+}
+
+/*  VIDEO INICIO   */
+
+.videoheader {
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+}
+
+.videoheader video {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*  VIDEOS RECEITAS  */
+
+.videos {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  top: 0;
+
+}
+video {
+  display: block;
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 800px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.titulovideos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "cocogoose";
+  color: #6b2b22;
+  margin-top: 20px;
+  margin-bottom: -130px;
+}
+
+.doacaotitulo {
+    font-family: "mamboe";
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 80px;
+  color: rgb(75, 39, 8);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 1800px;
+  height: 100px;
+  cursor: pointer;
+  display: flex;
+  font: 200;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botaoeventos {
+  font-family: "cocogooseFINA";
+  width: 150px;
+  border-radius: 30px;
+  border: #9d2f31;
+  border-width: 50px;
+  background-color: #7b5543;
+  color: #fff6e2;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -55px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 200px;
+}
+
+.botaoeventos:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(157, 47, 49, 0.3);
+}
+footer {
+  width: 100%;
+  background: #5c3511;
+  color: #fff;
+  padding: 50px 60px 30px;
+  font-size: 14px;
+  margin: 0%;
+}
+
+footer button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #643f2a;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer button:hover {
+  background: rgb(170, 129, 101);
+}
+
+
+
+.redes {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+.final {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.final a {
+  color: #f5ddd9;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.final a:hover {
+  color: #fff;
+}
+
+.mensagem {
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+
+.conteudo-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+footer p {
+  margin-bottom: 8px;
+  display: block;
+  color: #edf7ff;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer a {
+  margin-bottom: 8px;
+  display: block;
+  color: #edf7ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+
+.rodape {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.rodape a {
+  color: #f5ddd9;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.rodape a:hover {
+  color: #fff;
+}
+
+a {
+  font-size: 18px;
+}
+
+.descricao {
+  font-size: 60px;
+}
+
+.rodape p {
+  font-size: 18px;
+}
+
+.newsletter p {
+  font-size: 18px;
+}
+
+.conteudo-footer p {
+  font-size: 18px;
+}

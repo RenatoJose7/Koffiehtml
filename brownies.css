@@ -1,0 +1,908 @@
+/* FONTES */
+
+.p1{
+    font-family: "cocogoose";
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+    color: #6b2b22;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cocogoose";
+}
+
+.coo1 {
+  color: #6b2b22;
+    font-family: coolvetica;
+}
+
+@font-face {
+    font-family: "coolvetica";
+    src: url(font/coolvetica/Coolvetica\ Rg.otf);
+}
+@font-face {
+    font-family: "baby";
+    src: url(font/babydoll/Baby\ Doll.otf);
+}
+@font-face {
+  font-family: "super";
+  src: url(font/super_comic_3/Super\ Comic.ttf);
+}
+@font-face {
+  font-family: "marline";
+  src: url(font/marline/Marline\ Personal\ Use\ Only.otf);
+}
+@font-face {
+  font-family: "creato";
+  src: url(font/creato_display/CreatoDisplay-Light.otf);
+}
+@font-face {
+  font-family: "alte haas grotesk bold";
+  src: url(/font/AlteHaasGroteskBold.ttf);
+}
+@font-face {
+  font-family: "cocogoose";
+  src: url(/font/cocogoose/Cocogoose-Pro-Semilight-trial.ttf);
+}
+@font-face {
+  font-family: "bear";
+  src: url(font/bear_days/Bear\ Days.otf);
+}
+
+/*  */
+
+header {
+  width: 100%;
+  font-family: "cocogoose";
+}
+
+.capa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: #57758c;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.capa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  animation: lightSweep 8s infinite linear;
+}
+
+.logo {
+  width: 170px;
+  height: 50px;
+  transition: transform 0.6s ease, filter 0.5s ease;
+  margin-top: 20px;
+  margin-bottom: 20px ;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.nave {
+  position: relative;
+  text-decoration: none;
+  font-size: 28px;
+  color: #fff5e8;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+.nave:hover {
+  color: #fff5e8;
+  transform: translateY(-2px);
+}
+.nave::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.4s ease;
+  transform: translateX(-50%);
+}
+.nave:hover::after {
+  width: 100%;
+}
+.nave.ativo {
+  color: #9d2f31;
+  font-size: 30px;
+}
+
+.eventosMain {
+  text-align: center;
+  padding: 60px 8%;
+  background-color: #fbf4eb;
+  animation: fadeUp 1s ease;
+}
+
+.tituloEventos {
+  font-size: 40px;
+  color: #9d2f31;
+  margin-bottom: 40px;
+  font-family: "cocogoose";
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fbf4eb;
+}
+
+h2 {
+    font-family: bear;
+    font-size: 50px;
+    font-weight: 400;
+    width: 400px;
+}
+
+
+
+.bann {
+    width: 100%;
+}
+/* -------------------------- COOKIE -> BROWNIE 1 ------------------------------------ */
+
+.teste {
+    margin-bottom: 350px;
+    background-size: cover;     /* faz a imagem cobrir todo o card */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    margin-top: 0;
+
+}
+.teste1 {
+
+    margin-top: 100px;
+    background-image: url("fundos/brownie1.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 700px; /* ajuste até ficar perfeito */
+    
+    position: relative; /* IMPORTANTE */
+    z-index: 1;
+}
+
+.teste {
+    position: relative;
+    z-index: 2; /* fica acima do fundo */
+}
+
+.brownie1 {
+    background-color: #fbf4eb;
+    margin-left: 200px;
+    margin-top: 250px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+
+
+.img01 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img1 {
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 800px;
+    margin-bottom:0px;
+    transition: transform 0.4s ease;
+}
+
+.text1 {
+    margin-left: 220px;
+    margin-top: -20px;
+    margin-right: 85px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra1 {
+  color: #fff5e8;
+  font-family: "cocogoose";
+  width: 150px;
+  border-radius: 30px;
+  border: #9d2f31;
+  border-width: 50px;
+  background-color: #6b2b22;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: -55px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  width: 200px;
+}
+
+.compra1:hover {
+  transform: scale(1.5);
+  background-color: #6b2b22;
+}
+
+.c1 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "bear";
+}
+
+.coo1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+-----------------------------------------------------
+.teste {
+    margin-bottom: 350px;
+    background-size: cover;     /* faz a imagem cobrir todo o card */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    margin-top: 0;
+
+}
+.teste2 {
+
+    margin-top: 100px;
+    background-image: url("fundos/brownie2.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 700px; /* ajuste até ficar perfeito */
+    
+    position: relative; /* IMPORTANTE */
+    z-index: 1;
+}
+
+.teste {
+    position: relative;
+    z-index: 2; /* fica acima do fundo */
+}
+
+.brownie2 {
+    background-color: #fbf4eb;
+    margin-left: 200px;
+    margin-top: 250px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+
+
+.img02 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img2 {
+    margin-top: -90px;
+    margin-left: 800px;
+    width: 700px;
+    margin-bottom:0px;
+    transition: transform 0.4s ease;
+}
+
+.text2 {
+    font-family: "cocogoose";
+    margin-left: -230px;
+    margin-top: -20px;
+    margin-right: 950px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra2 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "cocogoose";
+    border: 0;
+    color: rgb(235, 180, 136);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra2:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+
+.c2 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "cocogoose";
+}
+
+.coo2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+----------------------------------------------------
+
+.teste {
+    margin-bottom: 350px;
+    background-size: cover;     /* faz a imagem cobrir todo o card */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    margin-top: 0;
+
+}
+.teste3 {
+
+    margin-top: 100px;
+    background-image: url("fundos/brownie3.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 700px; /* ajuste até ficar perfeito */
+    
+    position: relative; /* IMPORTANTE */
+    z-index: 1;
+}
+
+.teste {
+    position: relative;
+    z-index: 2; /* fica acima do fundo */
+}
+
+.brownie3 {
+    background-color: #fbf4eb;
+    margin-left: 200px;
+    margin-top: 250px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+
+
+.img03 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img3 {
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 800px;
+    margin-bottom:150px;
+    transition: transform 0.4s ease;
+}
+
+.text3 {
+    margin-left: 220px;
+    margin-top: -20px;
+    margin-right: 85px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra3 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: rgb(235, 180, 136);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra3:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+
+.c3 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "bear";
+}
+
+.coo3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+--------------------------------------------------
+.teste {
+    margin-bottom: 350px;
+    background-size: cover;     /* faz a imagem cobrir todo o card */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    margin-top: 0;
+
+}
+.teste4 {
+
+    margin-top: 100px;
+    background-image: url("fundos/brownie4.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 700px; /* ajuste até ficar perfeito */
+    
+    position: relative; /* IMPORTANTE */
+    z-index: 1;
+}
+
+.teste {
+    position: relative;
+    z-index: 2; /* fica acima do fundo */
+}
+
+.brownie4 {
+    background-color: #fbf4eb;
+    margin-left: 200px;
+    margin-top: 250px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+
+}
+
+
+
+.img04 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img4 {
+    margin-top: -90px;
+    margin-left: 700px;
+    width: 700px;
+    margin-bottom:0px;
+    transition: transform 0.4s ease;
+}
+
+.text4 {
+    font-family: "cocogoose";
+    margin-left: -230px;
+    margin-top: -20px;
+    margin-right: 950px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra4 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "cocogoose";
+    border: 0;
+    color: rgb(235, 180, 136);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra4:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+
+.c4 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "cocogoose";
+}
+
+.coo4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+---------------------------------
+
+.teste {
+    margin-bottom: 350px;
+    background-size: cover;     /* faz a imagem cobrir todo o card */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+.teste5 {
+    margin-top: 100px;
+    background-image: url("fundos/brownie5.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 700px; /* ajuste até ficar perfeito */
+    
+    position: relative; /* IMPORTANTE */
+    z-index: 1;
+}
+
+.teste {
+    position: relative;
+    z-index: 2; /* fica acima do fundo */
+}
+
+.brownie5 {
+    background-color: #fbf4eb;
+    margin-left: 200px;
+    margin-top: 250px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.img05 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img5 {
+    margin-top: -50px;
+    margin-left: -100px;
+    width: 800px;
+    margin-bottom:150px;
+    transition: transform 0.4s ease;
+}
+
+.text5 {
+    margin-left: 220px;
+    margin-top: -20px;
+    margin-right: 85px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra5 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "bear";
+    border: 0;
+    color: rgb(235, 180, 136);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra5:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+.c5 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "bear";
+}
+
+.coo5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+-----------------------------------------
+
+.teste {
+    margin-bottom: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+.teste6 {
+    margin-top: 100px;
+    background-image: url("fundos/brownie6.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 700px;
+    
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0px;
+}
+
+.teste {
+    position: relative;
+    z-index: 2;
+}
+
+.brownie6 {
+    background-color: #fbf4eb;
+    margin-left: 200px;
+    margin-top: 250px;
+    width: 1500px;
+    height: 400px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.img06 {
+    margin-left: 30px;
+    width: 390px;
+    border-radius: 40px;
+}
+
+.img6 {
+    margin-top: -90px;
+    margin-left: 900px;
+    width: 700px;
+    margin-bottom: 0px;
+    transition: transform 0.4s ease;
+}
+
+.text6 {
+    font-family: "cocogoose";
+    margin-left: -230px;
+    margin-top: -20px;
+    margin-right: 950px;
+    border-radius: 40px;
+    width: 600px;
+}
+
+.compra6 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: "cocogoose";
+    border: 0;
+    color: rgb(235, 180, 136);
+    transition: all 0.8s ease-in;
+    font-weight: 0;
+}
+
+.compra6:hover {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+}
+
+.c6 {
+    font-size: 55px;
+    margin-bottom: 0;
+    font-family: "cocogoose";
+}
+
+.coo6 {
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+
+--------------------------------------
+
+
+footer {
+  width: 100%;
+  background: #57758c;
+  color: #fff;
+  padding: 50px 60px 30px;
+  font-size: 14px;
+  margin: 0%;
+}
+
+footer button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #184d75;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer button:hover {
+  background: #3d698b;
+}footer {
+  width: 100%;
+  background: #57758c;
+  color: #fff;
+  padding: 50px 60px 30px;
+  font-size: 14px;
+  margin: 0%;
+}
+
+footer button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #184d75;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer button:hover {
+  background: #3d698b;
+}
+
+
+
+.redes {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+.final {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.final a {
+  color: #f5ddd9;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.final a:hover {
+  color: #fff;
+}
+
+.mensagem {
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+
+.conteudo-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+footer p {
+  margin-bottom: 8px;
+  display: block;
+  color: #edf7ff;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer a {
+  margin-bottom: 8px;
+  display: block;
+  color: #edf7ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+
+.rodape {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.rodape a {
+  color: #f5ddd9;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.rodape a:hover {
+  color: #fff;
+}
+
+a {
+  font-size: 18px;
+}
+
+.descricao {
+  font-size: 60px;
+}
+
+.rodape p {
+  font-size: 18px;
+}
+
+.newsletter p {
+  font-size: 18px;
+}
+
+.conteudo-footer p {
+  font-size: 18px;
+}
